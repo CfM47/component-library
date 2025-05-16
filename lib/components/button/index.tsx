@@ -14,7 +14,7 @@ export interface ButtonProps extends MuiButtonProps {
   loadingStyle?: SxProps;
 }
 
-export const Button: React.FC<ButtonProps> = ({
+export const Button = ({
   onClick,
   text,
   type,
@@ -22,7 +22,7 @@ export const Button: React.FC<ButtonProps> = ({
   loadingStyle = { color: "white" },
   sx,
   ...rest
-}) => {
+}: ButtonProps) => {
   return (
     <MuiButton
       variant="contained"

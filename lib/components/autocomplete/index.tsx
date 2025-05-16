@@ -16,12 +16,12 @@ export interface AutocompleteProps
   ) => void;
 }
 
-export const Autocomplete: React.FC<AutocompleteProps> = ({
+export const Autocomplete = ({
   options,
   label,
   placeholder = "",
   onChange,
-}) => {
+}: AutocompleteProps) => {
   return (
     <MuiAutocomplete
       options={options}

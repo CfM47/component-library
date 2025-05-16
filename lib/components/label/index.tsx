@@ -1,4 +1,3 @@
-import React from "react";
 import { Typography } from "@mui/material";
 
 export interface LabelProps {
@@ -6,7 +5,7 @@ export interface LabelProps {
   color?: string;
 }
 
-export const Label: React.FC<LabelProps> = ({ label, color }) => {
+export const Label = ({ label, color }: LabelProps) => {
   return (
     <Typography color={color} fontWeight={400}>
       {label}
